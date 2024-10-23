@@ -8,7 +8,7 @@ import ListItem from "@material-ui/core/ListItem";
 // import Tooltip from "@material-ui/core/Tooltip";
 
 import github from "../../icons/github.svg";
-import Export from "../Button/Export"
+import Export from "../Button/Export";
 
 // import { ENTER_DELAY, LEAVE_DELAY } from "../../utils/constant";
 
@@ -25,34 +25,7 @@ class ListStorage extends Component {
 
     return (
       <List className={classes.list}>
-        {/* <ListItem
-          className={classes.listExport}
-          button
-          onClick={this.handleExport}
-        > */}
-          <Export/>
-          {/* <Button variant="outlined" color="primary" className={classes.btn}>
-            导出PDF
-          </Button> */}
-        {/* </ListItem> */}
-
-        {/* <Tooltip
-          title="登录"
-          placement="bottom"
-          enterDelay={ENTER_DELAY}
-          leaveDelay={LEAVE_DELAY}
-          disableFocusListener
-        > */}
-          <ListItem
-            className={classes.listItem}
-            button
-            onClick={this.handleSave}
-          >
-            <a className={classes.github} target="_blank" rel="noopener noreferrer" href="https://github.com/guanpengchn/markdown-resume">
-              <img src={github} alt="logo" />
-            </a>
-          </ListItem>
-        {/* </Tooltip> */}
+        <Export />
       </List>
     );
   }
