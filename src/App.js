@@ -90,7 +90,7 @@ const styles = theme => ({
     display: "flex",
     padding: "16mm 11mm",
     width: contentWidth + "mm",
-    height: contentHeight + "mm",
+    height: "100%",
     background: "white",
     overflow: "auto",
     wordBreak: "break-all"

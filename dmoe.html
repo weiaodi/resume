@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>    
+<title></title>
+<meta charset="utf-8">
+</head>
+<script type="text/javascript">
+    function my_print(){    //直接调用浏览器打印功能   
+        bdhtml=window.document.body.innerHTML;    //定义打印区域起始字符，根据这个截取网页局部内容        
+        sprnstr="<!--startprint-->"; //打印区域开始的标记   
+        eprnstr="<!--endprint-->";   //打印区域结束的标记     
+        prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17);         
+        prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));    //还原网页内容        
+        window.document.body.innerHTML=prnhtml;      //开始打印   
+        window.print();}
+</script>
+<body>    
+<a href="#" onClick="my_print();" ><span> 打  印</span></a><br>        
+<div style="width: 1080px;height:2500px;background-color: red;"></div>
+<!--endprint-->
+</body>
+</html>

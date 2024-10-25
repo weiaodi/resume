@@ -60,3 +60,20 @@ img {
 ::-webkit-scrollbar {
   display: none !important;
 }
+
+p {
+  page-break-before: avoid;
+}
+h2 {
+  page-break-before: always;
+}
+
+@media print {
+  /* 假设这个超长元素有一个特定的类名.long-element */
+ .inject-inject-Resume-with-navbar-with-resume-layout-1216 {
+    height: 5738px;
+    /* 设置字体大小、颜色等以适应打印 */
+    font-size: 12pt;
+    color: black;
+  }
+}
